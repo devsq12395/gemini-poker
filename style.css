@@ -1,0 +1,59 @@
+
+@import "styles/header.css";
+@import "styles/table.css";
+@import "styles/control.css";
+@import "styles/popup.css";
+@import "styles/tutorial.css";
+@import "styles/win-popup.css";
+@import "styles/text-effect.css";
+@import "styles/api-get.css";
+
+:root {
+	--light-blue-1: #3acee9;
+    --light-blue-2: #069aa5;
+	--dark-gray-1: #222;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 900px;
+    background-color: #008dda;
+    padding-top: 20px;
+}
+
+.main-grid {
+    width: 100%;
+    height: 90%;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+	gap: 20px;
+    margin: 20px 0px 20px 0px;
+}
+
+img {
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/* Tablets */
+@media only screen and (max-width: 876px) {
+    html, body {
+        height: 1000px;
+    }
+}
+
+/* Phones */
+@media only screen and (max-width: 528px) {
+    html, body {
+        height: 750px;
+    }
+}

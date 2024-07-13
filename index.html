@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poker Trainer</title>
+
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+  <div class="header">
+    <h1>Poker Trainer</h1>
+    <img id="nav-btn" src="media/imgs/nav-btn.png">
+  </div>
+  
+  <nav id="nav-bar">
+    <ul>
+      <li class="nav-bar-list" id="nav-bar-tutorial"><p>How to Play</p></li>
+      <li class="nav-bar-list" id="nav-bar-combination"><p>Card Combinations</p></li>
+      <li class="nav-bar-list" id="nav-bar-blog"><p>Check the Dev Blog</p></li>
+      
+    </ul>
+  </nav>
+
+  <div class="main-grid">
+
+    <div class="table">
+      
+      <div class="table-pot">
+        <div class="board-cards"></div>
+        <h3 id="pot-txt">Pot: 0<br>Board: </h3>
+      </div>
+    </div>
+
+    <div class="control">
+      <div class="labels">
+        <h3>Bet/Raise Amount:</h3>
+        <h4 id="label-chips">2 chips</h4>
+      </div>
+      <input type="range" value="0" id="bet-input">
+      <div class="control-btns">
+        <button class="control-btn" id="btn-check">Check</button>
+        <button class="control-btn" id="btn-call">Call</button>
+        <button class="control-btn" id="btn-bet">Bet</button>
+        <button class="control-btn" id="btn-raise">Raise</button>
+        <button class="control-btn" id="btn-fold">Fold</button>
+      </div>
+      <button class="control-btn" id="btn-ask">Ask AI for advice</button>
+    </div>
+  </div>
+
+  <div class="popup">
+    <div class="popup-window">
+      <h2 class="popup-title">TEst of text</h2>
+      <h3 class="popup-msg">TEst of text</h3>
+      <button class="popup-btn popup-btn-ok">OK</button>
+    </div>
+  </div>
+
+  <div class="win-popup">
+    <!--img id="win-img" src="media/imgs/tut-01.png"-->
+    <div class="win-window">
+      <div class="win-txts">
+        <h1 class="win-title">You Win!</h1>
+        <h1 class="win-desc">Ranking: 1st</h1>
+      </div>
+      <button class="win-popup-btn win-popup-btn-restart">Play Again</button>
+    </div>
+  </div>
+
+  <div class="tutorial">
+    <div class="tutorial-window">
+      <img class="tutorial-image" src="media/imgs/tut-06.png">
+      <button class="btn-tutorial btn-tutorial-next">Next</button>
+    </div>
+  </div>
+
+  <div class="api-get">
+    <div class="api-get-window">
+      <h3>Please add your Google Gemini key:</h3>
+      <input type="text" id="input-apikey"/>
+      <button class="btn-api-get btn-api-get-submit">Submit</button>
+    </div>
+  </div>
+
+  <script src="scripts/preloader.js"></script>
+
+  <script src="scripts/hand-evaluator.js"></script>
+  <script src="scripts/doms/controller.js"></script>
+  <script src="scripts/doms/table.js"></script>
+  <script src="scripts/doms/popup.js"></script>
+  <script src="scripts/doms/tutorial.js"></script>
+  <script src="scripts/doms/header.js"></script>
+  <script src="scripts/doms/win.js"></script>
+  <script src="scripts/doms/text-effect.js"></script>
+  <script src="scripts/doms/api-get.js"></script>
+
+  <script src="scripts/api-handler.js"></script>
+  <script src="scripts/globals.js"></script>
+  <script src="scripts/player.js"></script>
+  <script src="scripts/game-handler.js"></script>
+
+  <script>
+    // Start the game
+    window.gameHandler.init ();
+    domTable.mediaQueryEvent ();
+    domTutorial.mediaQueryEvent ();
+  </script>
+  </body>
+</html>

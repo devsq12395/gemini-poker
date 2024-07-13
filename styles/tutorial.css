@@ -1,0 +1,72 @@
+
+
+
+.tutorial {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "DM Sans", sans-serif, Arial;
+}
+
+.tutorial-window {
+    width: 65%;
+    height: auto;
+    min-height: 400px;
+    background-color: #eee;
+    border: 1px solid #222;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.tutorial-image {
+    width: 100%;
+}
+
+.btn-tutorial {
+    width: 15%;
+    height: 6%;
+    min-height: 27px;
+
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.25rem;
+
+    overflow: hidden;
+}
+
+.btn-tutorial:hover {
+    background-color: #0056b3;
+}
+
+/* Tablets */
+@media only screen and (max-width: 876px) {
+    .tutorial-window {
+        width: 40%;
+        min-width: 350px;
+        height: 90%;
+    }
+}

@@ -1,0 +1,14 @@
+
+
+.text-effect {
+    width: 141px;
+    height: 51px;
+
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;
+
+    position: absolute;
+
+    transition: opacity 0.3s, transform 1s;
+}

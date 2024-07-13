@@ -1,0 +1,27 @@
+
+
+
+
+1. looking for free apis and making them work
+	- found that gemini works
+2. tested a sample conversation, see if the AI will respond the way i want to
+3. planning scripts and testing the flow on console log
+	- created a seperate script for handling api communication, 
+	called it api-handler.js
+	- made it as a global variable so it's accessible to any scripts
+
+	- created a gameControl to handle the state of the game
+
+	- while creating the flow, checking on console log if it's correct
+	- once flow is done, playing first in console log to check
+
+4. planning the backend
+	- creating dom scripts
+
+5. preparing the ai integration
+	- adding an handHistory to 
+
+6. proven ai works, creating the control scripts
+
+7. making the frontend
+	- looking for card api so i wont have to download 52 cards
